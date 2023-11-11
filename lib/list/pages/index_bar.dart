@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:list/common.dart';
+import 'package:list/list/pages/common.dart';
 
 class IndexBarWidget extends StatefulWidget {
   final void Function(String str) indexBarCallBack;

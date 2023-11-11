@@ -1,5 +1,6 @@
 //cell头的高度
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 const double cellHeaderHeight = 30.0;
 // cell的高度
@@ -40,3 +41,8 @@ const INDEX_WORDS = [
   'Y',
   'Z',
 ];
+
+//从本地加载json数据
+Future<String> loadJsonFromAssets(String fileName) async {
+  return await rootBundle.loadString(fileName);
+}
